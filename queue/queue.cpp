@@ -64,4 +64,8 @@ public:
 		int FRONT_position = FRONT;
 		int rear_position = REAR;
 
-		
+		//cek apakah antrian kosong
+		if (FRONT == -1) {
+			cout << "Queue is empty\n";
+			return;
+		}
