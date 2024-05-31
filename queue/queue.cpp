@@ -18,7 +18,7 @@ public:
 		cout << endl;
 
 		//cek apakah antrian penuh
-		if (FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1)) {
+		if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1)) {
 			cout << "\nQueue overflow\n";
 			return;
 			}
@@ -39,4 +39,8 @@ public:
 	}
 	
 	void remove() {
+		// cek apakah antrian kosong
+		if (FRONT == -1) {
+			cout << "Queue underflow\n";
+			return;
 
